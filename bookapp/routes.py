@@ -35,7 +35,7 @@ def parse_htmlbook(page):
 	for ind in range(len(links)):
 		section = {}
 		start = links[ind]
-		print(start)
+		# print(start)
 		if ind < len(links)-1:
 			end = links[ind+1]
 			# print (end)
