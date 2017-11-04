@@ -15,7 +15,7 @@ def index():
 	for i in range(len(links)):
 		section.append(str(sections[links[i]]['title']))
 		# print (section)
-	return render_template('index.html', title = title, image = image, section = section, numChapters = len(links), links = links)
+	return render_template('home.html', title = title, image = image, section = section, numChapters = len(links), links = links)
 
 @app.route('/<page>')
 def section(page):
